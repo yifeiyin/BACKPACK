@@ -184,22 +184,22 @@ Notes are only for myself. If there is something I already know, I won't write i
         ```
     > Ok, where is `self`? How to generalize this?
     
-    - Timer 
-        ```python
-        def h1():
-            tess.forward(100)
-            tess.left(56)
+- Timer 
+    ```python
+    def h1():
+        tess.forward(100)
+        tess.left(56)
 
-        wn.ontimer(h1, 2000)
-        ```
-        - the timer is automatically released once fired. Therefore, we need to do this:
-        ```python
-        def h1():
-            tess.forward(100)
-            tess.left(56)
-            wn.ontimer(h1, 60)
+    wn.ontimer(h1, 2000)
+    ```
+    - the timer is automatically released once fired. Therefore, we need to do this:
+    ```python
+    def h1():
+        tess.forward(100)
+        tess.left(56)
+        wn.ontimer(h1, 60)
 
-        h1()
-        ```
+    h1()
+    ```
 
     
