@@ -90,8 +90,8 @@ Notes are only for myself. If there is something I already know, I won't write i
             ...
     ```
 
-
-### 8. Strings <a id="chapter-8"/>
+<a id="chapter-8"></a>
+### 8. Strings
 
 - string usages: 
     ```python
@@ -124,7 +124,7 @@ Notes are only for myself. If there is something I already know, I won't write i
     - Use `.2f` for float with 2 decimals
 
 
-<a id="chapter-9"/>
+<a id="chapter-9"></a>
 ### 9. Tuples
 
 - Tuples are immutable
@@ -132,7 +132,7 @@ Notes are only for myself. If there is something I already know, I won't write i
 - Use tuples to swap varibles. ex: (a, b) = (b, a)
 
 
-<a id="chapter-10"/>
+<a id="chapter-10"></a>
 ### 10. Event-Driven Programming 
 
 - Keypress events
