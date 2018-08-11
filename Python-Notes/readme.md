@@ -124,14 +124,16 @@ Notes are only for myself. If there is something I already know, I won't write i
     - Use `.2f` for float with 2 decimals
 
 
-### <a id="chapter-9"/>9. Tuples
+<a id="chapter-9"/>
+### 9. Tuples
 
 - Tuples are immutable
 - To create a single element tuple, add a comma in the end. ex: a = (5,)
 - Use tuples to swap varibles. ex: (a, b) = (b, a)
 
 
-### 10. Event-Driven Programming <a id="chapter-10"/>
+<a id="chapter-10"/>
+### 10. Event-Driven Programming 
 
 - Keypress events
     ```python
