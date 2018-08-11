@@ -47,7 +47,7 @@ Notes are only for myself. If there is something I already know, I won't write i
 - Boolean operators: `!= == <= >= < >` `and` `or` `not`
 
 - Conditionals:
-    ```
+    ```python
     if x < y:
         STATEMENTS
     elif x > y:
@@ -65,7 +65,7 @@ Notes are only for myself. If there is something I already know, I won't write i
 - format string: `str = "I have {0} apples.".format(num)`
 
 - while statement:
-    ```
+    ```python
     while True:
         ...
     ```
@@ -73,7 +73,7 @@ Notes are only for myself. If there is something I already know, I won't write i
 - `break` `continue`
 
 - Paired Data
-    ```
+    ```python
     person = ("Alex", 1998)
     people = [("...", 1999), ("...", 2000), ... ]
     for (name, year) in people:
@@ -85,7 +85,7 @@ Notes are only for myself. If there is something I already know, I won't write i
 ### 8. Strings
 
 - string usages: 
-    ```
+    ```python
     str = "string"
     str[0], str[3:5], str[3:], str[:5], str[-1]
     ```
@@ -125,7 +125,7 @@ Notes are only for myself. If there is something I already know, I won't write i
 ### 10. Event-Driven Programming
 
 - Keypress events
-    ```
+    ```python
     import turtle
 
     # To listen for a key, simply:
@@ -141,7 +141,7 @@ Notes are only for myself. If there is something I already know, I won't write i
     - To refer to a key: use "q", "Cancel", "Up", "Down", etc. (10.1)
 
 - keyword `global`:
-    ```
+    ```python
     a = 10
     def f():
         global a
@@ -149,5 +149,46 @@ Notes are only for myself. If there is something I already know, I won't write i
 
     f()   # Will print 10
     ```
+- Mouse events:
+    - Mouse events on the window
+        ```python
+        def h1(x, y):
+        tess.goto(x, y)
+        wn.onclick(h1)  # Wire up a click on the window.
+        wn.mainloop()
+        ```
 
+    - Mouse events on the turtle
+        ```python
+        def handler_for_tess(x, y):
+            tess.forward(30)
 
+        def handler_for_alex(x, y):
+            alex.forward(50)
+
+        tess.onclick(handler_for_tess)
+        alex.onclick(handler_for_alex)
+
+        wn.mainloop()
+        ```
+    > Ok, where is `self`? How to generalize this?
+    
+    - Timer 
+        ```python
+        def h1():
+            tess.forward(100)
+            tess.left(56)
+
+        wn.ontimer(h1, 2000)
+        ```
+        - the timer is automatically released once fired. Therefore, we need to do this:
+        ```python
+        def h1():
+            tess.forward(100)
+            tess.left(56)
+            wn.ontimer(h1, 60)
+
+        h1()
+        ```
+
+    
