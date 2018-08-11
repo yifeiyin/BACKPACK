@@ -1,9 +1,17 @@
 # Python Notes
 
+## Quick Links
+
+[Chapter 1-7](#chapter-1-7)  
+[Chapter 8](#chapter-8)  
+[Chapter 9](#chapter-9)  
+[Chapter 10](#chapter-10)
+
+## Some Explanations
+
 These are backups of my notes while reading a python tutorial book.
 
-[How to Think Like a Computer Scientist: Learning with Python 3 (RLE)](http://openbookproject.net/thinkcs/python/english3e/)
-
+[How to Think Like a Computer Scientist: Learning with Python 3 (RLE)](http://openbookproject.net/thinkcs/python/english3e/)  
 [Source Repo of the book](https://code.launchpad.net/~thinkcspy-rle-team/thinkcspy/thinkcspy3-rle)
 
 I don't know if it's a good book or not, but it's better than nothing anyways. And I feel pretty good up to now.
@@ -14,6 +22,7 @@ Notes are only for myself. If there is something I already know, I won't write i
 
 ## Notes
 
+<a id="chapter-1-7"></a>
 ### Chapter 1-7
 
 - `type()`
@@ -82,7 +91,7 @@ Notes are only for myself. If there is something I already know, I won't write i
     ```
 
 
-### 8. Strings
+### 8. Strings <a id="chapter-8"/>
 
 - string usages: 
     ```python
@@ -115,14 +124,14 @@ Notes are only for myself. If there is something I already know, I won't write i
     - Use `.2f` for float with 2 decimals
 
 
-### 9. Tuples
+### 9. Tuples <a id="chapter-9"/>
 
 - Tuples are immutable
 - To create a single element tuple, add a comma in the end. ex: a = (5,)
 - Use tuples to swap varibles. ex: (a, b) = (b, a)
 
 
-### 10. Event-Driven Programming
+### 10. Event-Driven Programming <a id="chapter-10"/>
 
 - Keypress events
     ```python
