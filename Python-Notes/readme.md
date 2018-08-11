@@ -124,7 +124,7 @@ Notes are only for myself. If there is something I already know, I won't write i
     - Use `.2f` for float with 2 decimals
 
 
-### 9. Tuples <a id="chapter-9"/>
+### <a id="chapter-9">9. Tuples</a>
 
 - Tuples are immutable
 - To create a single element tuple, add a comma in the end. ex: a = (5,)
