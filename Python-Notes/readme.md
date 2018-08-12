@@ -1,11 +1,11 @@
 # Python Notes
 
-## Quick Links
-
-[Chapter 1-7](#chapter-1-7)  
-[Chapter 8](#chapter-8)  
-[Chapter 9](#chapter-9)  
-[Chapter 10](#chapter-10)
+Jump to chapter: [<< 1-7 >>](#chapter-1-7)
+[<< 8 >>](#chapter-8)
+[<< 9 >>](#chapter-9)
+[<< 10 >>](#chapter-10)
+[<< 11 >>](#chapter-11)
+  
 
 ## Some Explanations
 
@@ -202,4 +202,80 @@ Notes are only for myself. If there is something I already know, I won't write i
     h1()
     ```
 
-    
+
+<a id="chapter-11"></a>
+### 11. Lists
+
+- List items can be nested, they don’t have to be the same type: ```[“apple”, 200, [“today”, 10.2]]```
+
+- Use ```len()``` ``` for item in ``` ```in, not in```
+
+- ```+``` to concatenate, ```*``` to repeats a list a given times
+
+- ```[a:b]``` to slice a list
+
+- Unlike string, lists are mutable
+
+- Use slices to perform Insertion and deletion 
+    ```python
+    >>> a_list = ["a", "d", "f"]
+    >>> a_list[1:1] = ["b", "c"]
+    >>> a_list
+    ['a', 'b', 'c', 'd', 'f']
+    ```
+
+- To delete, can also use ```del```. ex: ```del a_list[1:5]```
+
+- Use ```is``` to test two variables are pointing to one memory location. If they are, we say the two vars are aliased.
+
+- To clone a variable, use ```a=b[:]```
+    ```python
+    for item in list:
+        item = item + 1 # doesn’t it work?
+    ```
+
+- ```enumerate()```generates paired data (on demand), ```(index, value)```
+    ```python
+    xs = [1, 2, 3, 4, 5]
+    for (i, val) in enumerate(xs):
+        xs[i] = val**2
+    ```
+- when passing list as argument, we are passing the pointer
+
+- look into Python visualizer
+
+- List methods
+    - ```.append(newElement)```
+    - ```.count(element)``` counts times of appearing
+    - ```.insert(position, newElement)```
+    - ```.extend(newList)``` append a list to the end
+    > what’s the difference btw extend and append?
+    - ```.index(element)``` indexOf (the first)
+    - ```.remove(element)``` removeElement (the first one)
+    - ```.reverse()```
+    - ```.sort()```
+
+- Pure function does not modify arguments
+
+- Modifiers modifies arguments, which is called side effects
+
+- STRING: Use ```String.split()``` to break a sentence into words. Any white spaces are the delimiter. Can also manually pass a delimiter as argument.
+
+- ```String.join(List<String>)``` first String works as glue
+
+- ```list()``` Type conversion, tries to make list with given things
+
+- ```def range(from=0, to, step=1)```
+
+- ```range()``` does not spit out a list instantly, it does it on demand.
+    ```python
+    >>> range(10)           # Create a lazy promise
+    range(0, 10)
+    >>> list(range(10))     # Call in the promise, to produce a list.
+    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    ```
+
+- To visit Nested list or Matrix: ```Val = a_list[2][3]```
+
+
+
