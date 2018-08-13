@@ -242,8 +242,6 @@ Notes are only for myself. If there is something I already know, I won't write i
     ```
 - when passing list as argument, we are passing the pointer
 
-- look into Python visualizer
-
 - List methods
     - ```.append(newElement)```
     - ```.count(element)``` counts times of appearing
