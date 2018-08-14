@@ -1,13 +1,15 @@
 # Python Notes
 
-Jump to chapter: [<< 1-7 >>](#chapter-1-7)
-[<< 8 >>](#chapter-8)
-[<< 9 >>](#chapter-9)
-[<< 10 >>](#chapter-10)
-[<< 11 >>](#chapter-11)
-[<< 12 >>](#chapter-12)
-[<< 13 >>](#chapter-13)
-  
+Jump to chapter:
+[1-7](#chapter-1-7)
+ · [8](#chapter-8)
+ · [9](#chapter-9)
+ · [10](#chapter-10)
+ · [11](#chapter-11)
+ · [12](#chapter-12)
+ · [13](#chapter-13)
+ · [14](#chapter-14)
+ · [15-16](#chapter-15-16)
 
 ## Some Explanations
 
@@ -25,7 +27,7 @@ Notes are only for myself. If there is something I already know, I won't write i
 ## Notes
 
 <a id="chapter-1-7"></a>
-### Chapter 1-7
+### 1-7. The Basics
 
 - `type()`
     prints var's type. ex:`<class 'str'>`
@@ -278,7 +280,7 @@ Notes are only for myself. If there is something I already know, I won't write i
 
 
 <a id="chapter-12"></a>
-### Chapter 12 Modules
+### 12. Modules
 
 - Module `random`:
     ```python
@@ -338,7 +340,7 @@ Notes are only for myself. If there is something I already know, I won't write i
 
 
 <a id="chapter-13"></a>
-### Chapter 13 Files
+### 13. Files
 
 - Creating a File Handle
     ```python
@@ -378,5 +380,49 @@ Notes are only for myself. If there is something I already know, I won't write i
     the_text = retrieve_page("http://xml.resource.org/public/rfc/txt/rfc793.txt")
     print(the_text)
     ```
+
+
+<a id="chapter-14"></a>
+### 14. List Algorithms
+
+- `string.maketrans("ABC", "abc")` *trans* is for translate. It substitutes characters in avg1 with the corresponding char in avg2.
+
+- Test-driven development (TDD)
+
+- Binary Search
+    - Use ROI (region of interest), lb (lower bound), ub (uppper bound).
+
+- Removing adjacent duplicates from a list
+
+- Merging sorted lists
+
+
+<a id="chapter-15-16"></a>
+### 15-16. Classes and Objects
+
+- Python is an object-oriented programming language, which means that it has features which support object-oriented programming (OOP).
+
+- `__init__` will be called after an instance being created.
+    ```python
+    class ClassName:
+        """docstring"""
+
+        def __init__(self):
+            """docstring"""
+            self.x = 0
+            self.y = 0
+    ```
+
+- `__str__` will be called whenever it needs to be converted to string. ex. `print(...)`
+    ```python
+        def __str__(self):
+            return "({0}, {1})".format(self.x, self.y)
+    ```
+
+- **Shallow Equality** and **Deep Equality**. Shallow equality only compares the references. Deep equality compares the content of the obejcts.
+
+- **Shallow Copying** and **Deep Copying**. Module `copy` provides `copy()` and `deepcopy()`. 
+    - `copy.copy(obj)` does shallow copy, it creates a new object and initilize it with the same data. However, if there is any pointers, they still points to the same location.
+    - `copy.deepcopy()` does deep copy. Any embedded objects are created if needed.
 
 
