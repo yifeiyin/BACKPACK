@@ -1,6 +1,6 @@
 # Python Notes
 
-Jump to chapter (some are skipped): 
+Jump to chapter: 
 [1-7](#chapter-1-7)
  · [8](#chapter-8)
  · [9](#chapter-9)
@@ -16,10 +16,20 @@ Jump to chapter (some are skipped):
  · [21](#chapter-21)
  · 22
  · [23](#chapter-23)
- · [24](#chapter-24)
- · [25](#chapter-25)
- · [26](#chapter-26)
- · [27](#chapter-27)
+ · 24
+ · 25
+ · 26
+ · 27
+
+Chapters are skipped, for reference later:  
+17. PyGame  
+18. Recursion  
+22. Collections of Objects  
+24. Linked Lists  
+25. Stacks  
+26. Queues  
+27. Trees  
+
 
 ## Some Explanations
 
