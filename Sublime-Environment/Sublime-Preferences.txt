@@ -17,7 +17,7 @@
 
 	// For convenience
 	"translate_tabs_to_spaces": true,
-	"fade_fold_buttons": false,
+	"fade_fold_buttons": true,
 
 	// Personal Prefences
 	"font_options": ["no_italic"],
