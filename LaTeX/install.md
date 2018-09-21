@@ -10,9 +10,9 @@ Download here: [LaTeX Project](https://www.latex-project.org/get/)
 
 ## For Sublime Text, Read
 
-[install Package Control](https://packagecontrol.io/installation)   
-[install LaTeXTools](https://latextools.readthedocs.io/en/latest/install/)  
-^ install Skim, imagemagick, ghostscript as instrcted
+### [install Package Control](https://packagecontrol.io/installation)   
+### [install LaTeXTools](https://latextools.readthedocs.io/en/latest/install/)  
+ install Skim, imagemagick, ghostscript as instrcted
 
 <!---
 ## Sublime Text Setup
@@ -31,13 +31,14 @@ Read and follow intructions on LaTeXTools website.
 `brew install ghostscript` 
 -->
 
-Use LaTeXTools to "Check System" to check
+Use LaTeXTools "Check System" to check
 (Sublime Text menu > Preferences > Package Settings > LaTeXTools > Check System)
 
-To change Math equation inline preview settings, also see [here](https://latextools.readthedocs.io/en/latest/settings/#preview-settings).
+To change Math equation inline preview settings, also see [here](https://latextools.readthedocs.io/en/latest/settings/#preview-settings).  
+You can change its size, color, for *all equations* or *no equations* or *only standalone equations*.
 
 ## Other Color Themes, Tools
 
 LaTeX highlighting: Package Install: Writing Color Scheme Light
 
-Package Install: DistractionFreeWindow, MaxPane, **Dictionaries**
+Package Install: DistractionFreeWindow, MaxPane, Dictionaries(?)
