@@ -1,6 +1,6 @@
-# LaTeX Installation Process
+# LaTeX and Sublime Text
 
-Note: This is not a detailed tutorial on how to setup LaTeX, but rather a list of websites or tutorials to read.
+This is not a detailed tutorial on how to setup LaTeX, but rather a list of websites or tutorials to read.
 
 ## Install LaTeX
 
