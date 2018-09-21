@@ -8,11 +8,11 @@ Download here: [LaTeX Project](https://www.latex-project.org/get/)
 
 > After installation, use `pdflatex [filename]` in command line to compile tex file. Or use TeXShop which comes with the installation package.
 
-## For Sublime Text, Read
+## Configure in Sublime Text
 
 ### [install Package Control](https://packagecontrol.io/installation)   
 ### [install LaTeXTools](https://latextools.readthedocs.io/en/latest/install/)  
- install Skim, imagemagick, ghostscript as instrcted
+^ install Skim, imagemagick, ghostscript as instrcted
 
 <!---
 ## Sublime Text Setup
