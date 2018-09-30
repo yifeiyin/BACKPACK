@@ -51,3 +51,9 @@ Use Package Control
     },
 }
 ```
+
+## Other cool packages
+
+* ayu, command palette is super cool, but I don't like other stuff very much
+* a file icon, very cool!
+* colorsublime, preview color themes
