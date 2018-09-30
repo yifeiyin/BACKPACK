@@ -8,7 +8,7 @@ Use Package Control
 ### Under Sublime Key Bindings, add:
 ```
 // ////// command r and command b both work, they are only active in python context
-{
+    {
         "keys": ["super+r"],
         "caption": "SublimeREPL: Python - RUN current file",
         "command": "run_existing_window_command",
@@ -19,16 +19,23 @@ Use Package Control
                 "context": [
         { "key": "selector", "operator": "equal", "operand": "source.python" }]
     },
+
     {
         "keys": ["super+b"],
         "caption": "SublimeREPL: Python - RUN current file",
         "command": "run_existing_window_command",
         "args": {
             "id": "repl_python_run",
-            "file": "config/Python/Main.sublime-menu"
+            "file": "config/Python/Main.sublime-menu" 
         },
-        "context": [
-        { "key": "selector", "operator": "equal", "operand": "source.python" }]
+        "context": [{ "key": "selector", "operator": "equal", "operand": "source.python" }]
+    },
+
+    {
+        "keys": ["ctrl+c"], 
+        "command": "subprocess_repl_send_signal", 
+        "args": {"signal": 2},
+        "context": [{ "key": "setting.repl", "operator": "equal", "operand": true }]
     },
 ```
 
