@@ -7,7 +7,7 @@ Use Package Control
 
 ### Under Sublime Key Bindings, add:
 ```
-// ////// command r and command b both work, they are only active in python context
+// ////// command r -> Run python file
     {
         "keys": ["super+r"],
         "caption": "SublimeREPL: Python - RUN current file",
@@ -19,7 +19,7 @@ Use Package Control
                 "context": [
         { "key": "selector", "operator": "equal", "operand": "source.python" }]
     },
-
+ // ////// command b -> Run python file
     {
         "keys": ["super+b"],
         "caption": "SublimeREPL: Python - RUN current file",
@@ -30,7 +30,7 @@ Use Package Control
         },
         "context": [{ "key": "selector", "operator": "equal", "operand": "source.python" }]
     },
-
+ // ////// ctrl c -> send SIGINT, aka KeyboardInterrupt
     {
         "keys": ["ctrl+c"], 
         "command": "subprocess_repl_send_signal", 
