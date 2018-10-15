@@ -12,23 +12,23 @@ Download here: [LaTeX Project](https://www.latex-project.org/get/)
 
 ### [install Package Control](https://packagecontrol.io/installation)   
 ### [install LaTeXTools](https://latextools.readthedocs.io/en/latest/install/)  
-^ install Skim, imagemagick, ghostscript as instrcted
+^ install Skim, imagemagick, ghostscript as instruted
 
 <!---
-## Sublime Text Setup
+  ## Sublime Text Setup
 
-Sublime Text: [install Package Control](https://packagecontrol.io/installation)
+  Sublime Text: [install Package Control](https://packagecontrol.io/installation)
 
-Package Control: install LaTeXTools (command shift P, type and select package control: install, type and select LaTeXTools)
+  Package Control: install LaTeXTools (command shift P, type and select package control: install, type and select LaTeXTools)
 
-The following tools are recommanded by [LaTeXTools Installation Page](https://latextools.readthedocs.io/en/latest/install/)
+  The following tools are recommanded by [LaTeXTools Installation Page](https://latextools.readthedocs.io/en/latest/install/)
 
-Software: Skim (for better forward and backward search)
+  Software: Skim (for better forward and backward search)
 
-Setup ImageMagick and Ghostscript (for inline math equation preview)  
-Read and follow intructions on LaTeXTools website.
-`brew install imagemagick`
-`brew install ghostscript` 
+  Setup ImageMagick and Ghostscript (for inline math equation preview)  
+  Read and follow intructions on LaTeXTools website.
+  `brew install imagemagick`
+  `brew install ghostscript` 
 -->
 
 Use LaTeXTools "Check System" to check
