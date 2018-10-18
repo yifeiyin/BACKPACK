@@ -47,7 +47,7 @@ The first book or we can say tutorial, is more like an "introduction to python f
     - `%` for modulus
 
 - Convert between types, use `int(), float(), str(),` etc.
-    
+  
 - Get input from user, use `n = input("Prompt")`
 
 - For-loop: `for i in range(x):`
@@ -81,7 +81,7 @@ The first book or we can say tutorial, is more like an "introduction to python f
     - lowercase_with_underscores for functions and variables
     
 - Get Caller's Line Number: `import sys` `line_num = sys._getframe(1).f_lineno`
-    
+  
 - format string: `str = "I have {0} apples.".format(num)`
 
 - while statement:
@@ -336,6 +336,7 @@ The first book or we can say tutorial, is more like an "introduction to python f
     - In Python: One file, one module. The file name is the module name. (excluding the .py)
 
 - Scope and Loopup Rules
+
     - precedence rules: Local Scope -> Global Scope -> Built-in Scope
 
 - `import` statement variants
@@ -531,6 +532,7 @@ finally:
 - Python deals very well with polymorphism.
 
 - Duck typing:
+
     - > Pythonic programming style that determines an object's type by inspection of its method or attribute signature rather than by explicit relationship to some type object ("If it looks like a duck and quacks like a duck, it must be a duck.") By emphasizing interfaces rather than specific types, well-designed code improves its flexibility by allowing polymorphic substitution. Duck-typing avoids tests using type() or isinstance(). Instead, it typically employs the EAFP (Easier to Ask Forgiveness than Permission) style of programming.
 
 
@@ -654,6 +656,7 @@ class Hand(Deck)
     queue = queue(["23", "12", "23"])
     queue.append("vvv")
     a = queue.popleft()
+    ```
 
 - List Comprehensions
     ```python
@@ -796,9 +799,9 @@ print('Jack: {Jack:d}; Sjoerd: {Sjoerd:d}; Dcab: {Dcab:d}'.format(**table))
     - `nonlocal` makes the name belongs to the list which is owned by "one layer outer" of the current scope, for example in nested functions.
     - Without these keywords, outer names are read only. Attempts of assigning values will create a new variable.
 
-- `_x` `__x`: Add one underscore before a var or method to make it private. Two underscores before a var/method in classes will make the var/method's name being textually replaced with `_className__x()`; Subclasses would not be able to rewrite it, it helps to avoid any name crashes or sa.
+- `_x` `__x`: Add one underscore before a var or method to make it private. Two underscores before a var/method in classes will make the var/method's name being textually replaced with `_className__x()`; Subclasses would not be able to rewrite it, it helps to avoid any name crashes.
 
-- For stuct-like data type, simply use `class SomeClass: \n pass`
+- For struct-like data type, simply use `class SomeClass: \n pass`
 
 - Iterators: `__iter__` `__next__`
     - To make an object conforts `for ... in ...`, the object needs to implement `__iter__(self)`. This function should return an object which defines `__next__(self)`. The `__next__()` returns the next object and raise a `StopIteration` exception when reaches the end. 
@@ -817,6 +820,7 @@ print('Jack: {Jack:d}; Sjoerd: {Sjoerd:d}; Dcab: {Dcab:d}'.format(**table))
 - Generator Expressions, it is similar to list comprehensions, but this uses round brackets instead of square brackets. examples:
     ```python
     sum(i*i for i in range(10))                 # sum of squares
+    ```
 
 
     xvec = [10, 20, 30]
@@ -826,11 +830,11 @@ print('Jack: {Jack:d}; Sjoerd: {Sjoerd:d}; Dcab: {Dcab:d}'.format(**table))
 
     from math import pi, sin
     sine_table = {x: sin(x*pi/180) for x in range(0, 91)}
-
+    
     unique_words = set(word  for line in page  for word in line.split())
-
+    
     valedictorian = max((student.gpa, student.name) for student in graduates)
-
+    
     data = 'golf'
     list(data[i] for i in range(len(data)-1, -1, -1))
     ```
@@ -861,6 +865,7 @@ print('Jack: {Jack:d}; Sjoerd: {Sjoerd:d}; Dcab: {Dcab:d}'.format(**table))
     - `exit()`
 
 - Module `re`
+
     - sometimes for simple capabilities, use string methods such as `"abc".replace("from", "to")`.
 
 - Mathematics
@@ -901,6 +906,7 @@ print('Jack: {Jack:d}; Sjoerd: {Sjoerd:d}; Dcab: {Dcab:d}'.format(**table))
 - Module `datetime`
 
 - Data Compression
+
     - `zlib` `gzip` `bz2` `lzma` `zipfile` `tarfile`
 
 - Module `timeit`
@@ -944,8 +950,10 @@ print('Jack: {Jack:d}; Sjoerd: {Sjoerd:d}; Dcab: {Dcab:d}'.format(**table))
 - Weak References
 
 - Tools for Working with Lists
+
     - `array` `collections` `bisect` `heapq`
 
--  Decimal Floating Point Arithmetic
+- Decimal Floating Point Arithmetic
+
     - module `decimal` provides datatype `Decimal`
 
