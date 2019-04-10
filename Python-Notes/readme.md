@@ -1,17 +1,19 @@
 # Python Notes
 
 
-Jump to chapter: 
+Jump to chapter:
 [1-7](#chapter-1-7) · [8](#chapter-8) · [9](#chapter-9) · [10](#chapter-10) · [11](#chapter-11) · [12](#chapter-12) · [13](#chapter-13) · [14](#chapter-14) · [15-16](#chapter-15-16) · 17 · 18 · [19](#chapter-19) · [20](#chapter-20) · [21](#chapter-21) · 22 · [23](#chapter-23) · 24 · 25 · 26 · 27
 
-Chapters are skipped, for reference later:  
-17. PyGame  
-18. Recursion  
-22. Collections of Objects  
-24. Linked Lists  
-25. Stacks  
-26. Queues  
-27. Trees  
+```
+Chapters are skipped, for reference later:
+17. PyGame
+18. Recursion
+22. Collections of Objects
+24. Linked Lists
+25. Stacks
+26. Queues
+27. Trees
+```
 
 [**>> Jump to Notes Part 2 (Python Tutorial on python.org) <<**](#official-python-tutorial)
 
@@ -20,14 +22,14 @@ Chapters are skipped, for reference later:
 These are backups of my notes while reading a python tutorials.
 
 #### Part 1 Reference
-[How to Think Like a Computer Scientist: Learning with Python 3 (RLE)](http://openbookproject.net/thinkcs/python/english3e/)  
+[How to Think Like a Computer Scientist: Learning with Python 3 (RLE)](http://openbookproject.net/thinkcs/python/english3e/)
 [Source Repo of the book](https://code.launchpad.net/~thinkcspy-rle-team/thinkcspy/thinkcspy3-rle)
 
 #### Part 2 Reference
 [The Python Tutorial](https://docs.python.org/3/tutorial/index.html)
 
-#### Some Thoughts
-The first book or we can say tutorial, is more like an "introduction to python for programmer with some prior knowledge". It not rich enough for me, so I chose to read the tutorial from the python official site. The tutorial there certainly makes more assumptions about reader's knowledge, but with what I learned from the first book the tutorial is right for me. So I read through it spending 3 days (10±2 hours). The first book took me 4 days (13±3 hours), skipping couple chapters.
+#### Some Thoughts and Statistics
+(File creation time: 2018.10.14) The first book or we can say tutorial, is more like an "introduction to python for programmer with some prior knowledge". It not rich enough for me, so I chose to read the tutorial from the python official site. The tutorial there certainly makes more assumptions about reader's knowledge, but with what I learned from the first book the tutorial is right for me. So I read through it spending 3 days (10±2 hours). The first book took me 4 days (13±3 hours), skipping couple chapters.
 
 > PS: By reading a book on a computer, I think PDF is for the hard-copy books, and HTML is for computers. It's way better to read a webpage rather than a pdf document. I don't know if we can read HTML offline on iPads, or highlight texts, make notes while reading HTML on iPads/PC. Auto adopt size and adjustable font size, just these two features completely beats PDF. It should be like "scrolling through a page" rather than "turning pages of a book". Right, nowadays there are formats for ebooks. Textbooks may should be published along with a html-like format?? That might be too expensive tho.
 
@@ -38,16 +40,16 @@ The first book or we can say tutorial, is more like an "introduction to python f
 
 - `type()`
     prints var's type. ex:`<class 'str'>`
-    
+
 - Math Operations
-    - `+` `-` `*` 
+    - `+` `-` `*`
     - `/`  returns float
     - `//` returns int, rounding to the left
     - `**` for power
     - `%` for modulus
 
 - Convert between types, use `int(), float(), str(),` etc.
-  
+
 - Get input from user, use `n = input("Prompt")`
 
 - For-loop: `for i in range(x):`
@@ -79,9 +81,9 @@ The first book or we can say tutorial, is more like an "introduction to python f
     > I am not used to these
     - Use CamelCase for classes
     - lowercase_with_underscores for functions and variables
-    
+
 - Get Caller's Line Number: `import sys` `line_num = sys._getframe(1).f_lineno`
-  
+
 - format string: `str = "I have {0} apples.".format(num)`
 
 - while statement:
@@ -89,7 +91,7 @@ The first book or we can say tutorial, is more like an "introduction to python f
     while True:
         ...
     ```
-    
+
 - `break` `continue`
 
 - Paired Data
@@ -104,13 +106,13 @@ The first book or we can say tutorial, is more like an "introduction to python f
 <a id="chapter-8"></a>
 ### 8. Strings
 
-- string usages: 
+- string usages:
     ```python
     str = "string"
     str[0], str[3:5], str[3:], str[:5], str[-1]
     ```
 
-- Strings are immutable: 
+- Strings are immutable:
     `greeting[0] = "J"   # ERROR`
 
 - `in` and `not in` operators
@@ -143,7 +145,7 @@ The first book or we can say tutorial, is more like an "introduction to python f
 
 
 <a id="chapter-10"></a>
-### 10. Event-Driven Programming 
+### 10. Event-Driven Programming
 
 - Keypress events
     ```python
@@ -193,8 +195,8 @@ The first book or we can say tutorial, is more like an "introduction to python f
         wn.mainloop()
         ```
     > Ok, where is `self`? How to generalize this?
-    
-- Timer 
+
+- Timer
     ```python
     def h1():
         tess.forward(100)
@@ -226,7 +228,7 @@ The first book or we can say tutorial, is more like an "introduction to python f
 
 - Unlike string, lists are mutable
 
-- Use slices to perform Insertion and deletion 
+- Use slices to perform Insertion and deletion
     ```python
     >>> a_list = ["a", "d", "f"]
     >>> a_list[1:1] = ["b", "c"]
@@ -297,7 +299,7 @@ The first book or we can say tutorial, is more like an "introduction to python f
     - `.randrange(lowerBound, higherBound, step)`, include lowerBound, exclude higherBound.
     - `.random()` generates a number `[0.0, 1.0)`
     - `shuffle(list)` shuffles a list.
-    - explicit seeding: `random.Random(seed)` 
+    - explicit seeding: `random.Random(seed)`
 
 - Module `time`:
     ```python
@@ -358,11 +360,11 @@ The first book or we can say tutorial, is more like an "introduction to python f
 
     - > Note: The variable file is not actual file on the disk. Their relationship is like the one between a remote and the TV.
 
-    - mode write `"w"`: 
+    - mode write `"w"`:
         If there is no existing file, it will be created; if there is one, it will be cleared.
 
     - mode read `"r"`: (default)
-        - Reads lines from an existing file. Trying opening a non-existing file will generates an error. 
+        - Reads lines from an existing file. Trying opening a non-existing file will generates an error.
         - `.readline()` acquires a line. The `\n` is reserved at the end of the string. Therefore, to test if we reached the end, simply use `len(newLine)`.
         - `.readlines()` gets a list of strings containing the lines in the file.
 
@@ -371,11 +373,11 @@ The first book or we can say tutorial, is more like an "introduction to python f
 
 - The directory is defaulted to be the same as the program. Explictly say the absulote path when neccessary.
 
-- An example using urllib.request to retrieve content from the web. 
+- An example using urllib.request to retrieve content from the web.
     > socket: One end of a connection allowing one to read and write information to or from another computer.
     ```python
     import urllib.request
-    
+
     def retrieve_page(url):
         """ Retrieve the contents of a web page.
             The contents is converted to a string before returning it.
@@ -429,7 +431,7 @@ The first book or we can say tutorial, is more like an "introduction to python f
 
 - **Shallow Equality** and **Deep Equality**. Shallow equality only compares the references. Deep equality compares the content of the obejcts.
 
-- **Shallow Copying** and **Deep Copying**. Module `copy` provides `copy()` and `deepcopy()`. 
+- **Shallow Copying** and **Deep Copying**. Module `copy` provides `copy()` and `deepcopy()`.
     - `copy.copy(obj)` does shallow copy, it creates a new object and initilize it with the same data. However, if there is any pointers, they still points to the same location.
     - `copy.deepcopy()` does deep copy. Any embedded objects are created if needed.
 
@@ -556,16 +558,34 @@ class Hand(Deck)
 ```
 
 
-## #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# 
-## #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# 
-## #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# 
-## #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# 
-## #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# 
-## #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# 
-## #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# 
-## #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# 
+
+
+
+
+
+```
+# ------------------------------------------------------------ #
+
+# ------------------------------------------------------------ #
+
+   ________  ________  ________  _________         _______
+  |\   __  \|\   __  \|\   __  \|\___   ___\      /  ___  \
+  \ \  \|\  \ \  \|\  \ \  \|\  \|___ \  \_|     /__/|_/  /|
+   \ \   ____\ \   __  \ \   _  _\   \ \  \      |__|//  / /
+    \ \  \___|\ \  \ \  \ \  \\  \|   \ \  \         /  /_/__
+     \ \__\    \ \__\ \__\ \__\\ _\    \ \__\       |\________\
+      \|__|     \|__|\|__|\|__|\|__|    \|__|        \|_______|
+
+
+# ------------------------------------------------------------ #
+
+# ------------------------------------------------------------ #
+```
+
+
 
 <a id="official-python-tutorial"></a>
+
 # Part 2 - Notes from the Official Python Tutorial
 
 ### 3
@@ -588,11 +608,11 @@ class Hand(Deck)
 
 #### Functions
 
-- In function calls, there are keyword arguments and positional arguments. All keywords arguments must follow positional arguments. 
+- In function calls, there are keyword arguments and positional arguments. All keywords arguments must follow positional arguments.
 
 - `*name` and `**name`. `*name` receives a tuple of positional arguments (arg1, arg2, ...). `**name` receives a dictionary of arguments (keyword:arg). `*name` has to go before `**name`.
 
-- Arbitrary Argument List 
+- Arbitrary Argument List
     ```python
     >>> def concat(*args, sep="/"):
     ...     return sep.join(args)
@@ -650,7 +670,7 @@ class Hand(Deck)
 
 - Using list as stacks: `.append(newVal)` `.pop() -> element`
 
-- Using list as queues: 
+- Using list as queues:
     ```python
     from collections import deque
     queue = queue(["23", "12", "23"])
@@ -670,7 +690,7 @@ class Hand(Deck)
     ```
     ```python
     squares = [<<exp1(vars)>> <<exp2>>]
-    <<exp2>> could be: 
+    <<exp2>> could be:
     """for b in a for <<exp1(vars)>> in b if condition"""
     """^--------^ ^---------------^ ^----------^"""
     """ is equivlent to """
@@ -804,11 +824,11 @@ print('Jack: {Jack:d}; Sjoerd: {Sjoerd:d}; Dcab: {Dcab:d}'.format(**table))
 - For struct-like data type, simply use `class SomeClass: \n pass`
 
 - Iterators: `__iter__` `__next__`
-    - To make an object conforts `for ... in ...`, the object needs to implement `__iter__(self)`. This function should return an object which defines `__next__(self)`. The `__next__()` returns the next object and raise a `StopIteration` exception when reaches the end. 
+    - To make an object conforts `for ... in ...`, the object needs to implement `__iter__(self)`. This function should return an object which defines `__next__(self)`. The `__next__()` returns the next object and raise a `StopIteration` exception when reaches the end.
     - If the object defines both `__iter__` and `__next__` the *iter* can just return `self`.
 
 
-- Generators: 
+- Generators:
     ```python
     def reverse(data):
     for index in range(len(data)-1, -1, -1):
@@ -830,11 +850,11 @@ print('Jack: {Jack:d}; Sjoerd: {Sjoerd:d}; Dcab: {Dcab:d}'.format(**table))
 
     from math import pi, sin
     sine_table = {x: sin(x*pi/180) for x in range(0, 91)}
-    
+
     unique_words = set(word  for line in page  for word in line.split())
-    
+
     valedictorian = max((student.gpa, student.name) for student in graduates)
-    
+
     data = 'golf'
     list(data[i] for i in range(len(data)-1, -1, -1))
     ```
@@ -875,7 +895,7 @@ print('Jack: {Jack:d}; Sjoerd: {Sjoerd:d}; Dcab: {Dcab:d}'.format(**table))
         - `sample(range(100), 10)` sampling without replacement
         - `random()`
         - `randrange(6)`
-    - `statistics` 
+    - `statistics`
         - `mean(data)`
         - `median(data)`
         - `variance(data)`
@@ -923,7 +943,7 @@ print('Jack: {Jack:d}; Sjoerd: {Sjoerd:d}; Dcab: {Dcab:d}'.format(**table))
     - `email` for building and decoding complex message structures.
     - `json` `csv` `xml.etree.ElementTree, xml.dom, xml.sax` for data interchange.
     - `sqlite3` for SQLitedatabase library.
-    - `gettext` `locale` `codecs` for internationalization. 
+    - `gettext` `locale` `codecs` for internationalization.
 
 
 ### 11. More about the Standard Library

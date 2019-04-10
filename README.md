@@ -1,5 +1,11 @@
 # backpack
 
+> **WARNING: Archived Notes**
+>
+> These notes are no longer being maintained and are here for archive purpose only. Some usage may be deprecated in current standard.
+>
+> Look for other repositories for more current notes.
+
 Notes, blogs, memos, pieces of code, etc.
 
 ## License

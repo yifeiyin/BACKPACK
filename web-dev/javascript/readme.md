@@ -1,5 +1,9 @@
 # JavaScript Notes
 
+> **WARNING: Archived Notes**
+>
+> These notes are no longer being maintained and are here for archive purpose only. Some usage may be deprecated in current standard.
+
 #### Where to find help
 
 [Learn Web Development](https://developer.mozilla.org/en-US/docs/Learn)
