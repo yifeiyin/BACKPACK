@@ -6,7 +6,13 @@
 >
 > Look for other repositories for more current notes.
 
-Notes, blogs, memos, pieces of code, etc.
+Study notes (about coding), blogs, memos, pieces of code, etc.
+
+## Languages
+
+Only cultural specific things - such as platforms, tools, problems - will be written in Chinese for the sake of convenience. (People can hardly understand the content anyways.) Some technical things may still remain in English.
+
+Use `-label:"Language:Chinese"` in issues page to filter out Chinese notes.
 
 ## License
 
